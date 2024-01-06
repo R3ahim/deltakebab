@@ -1,0 +1,10 @@
+.manual_grid{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+}
+.displayer{
+    
+}
+.dis{
+    display: none;
+}
