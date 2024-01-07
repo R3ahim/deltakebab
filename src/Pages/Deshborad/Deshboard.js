@@ -88,7 +88,7 @@ function Deshboard() {
             class="py-2 text-sm text-gray-700 dark:text-gray-200"
             aria-labelledby="doubleDropdownButton"
           >
-             <Link to={'/deshboard/tuchola/totalSell'}>
+             <Link to={'/deshboard/shop1/totalSell'}>
 
             <li>
               <a
@@ -100,7 +100,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop1/expense'}>
+            <Link to={'/deshboard/shop2/expense'}>
             <li>
               <a
                 href="#"
@@ -115,6 +115,7 @@ function Deshboard() {
           </ul>
         </div>
       </li>
+               {/* shop shop2 dropdown start here */}
             <li>
         <button
           id="doubleDropdownButton"
@@ -123,7 +124,7 @@ function Deshboard() {
           type="button"
           class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
         >
-         Shop 2
+       Shop 2
           <svg
             class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
             aria-hidden="true"
@@ -148,7 +149,7 @@ function Deshboard() {
             class="py-2 text-sm text-gray-700 dark:text-gray-200"
             aria-labelledby="doubleDropdownButton"
           >
-             <Link to={'/deshboard/tuchola/totalSell'}>
+             <Link to={'/deshboard/shop2/totalSell'}>
 
             <li>
               <a
@@ -160,7 +161,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop1/expense'}>
+            <Link to={'/deshboard/shop2/totalSell'}>
             <li>
               <a
                 href="#"
@@ -175,6 +176,7 @@ function Deshboard() {
           </ul>
         </div>
       </li>
+               {/* shop tucho dropdown start here */}
             <li>
         <button
           id="doubleDropdownButton"
@@ -183,7 +185,7 @@ function Deshboard() {
           type="button"
           class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
         >
-         Shop 3
+          shop 3
           <svg
             class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
             aria-hidden="true"
@@ -208,7 +210,251 @@ function Deshboard() {
             class="py-2 text-sm text-gray-700 dark:text-gray-200"
             aria-labelledby="doubleDropdownButton"
           >
-             <Link to={'/deshboard/tuchola/totalSell'}>
+             <Link to={'/deshboard/shop3/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop3/expense'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+               {/* shop shop4 dropdown start here */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown4"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          shop 4
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown4"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop4/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop4/expense'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+               {/* shop shop5 dropdown start here */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown5"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          shop 5
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown5"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop5/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop2/totalSell'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+               {/* shop shop6 dropdown start here */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown6"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          shop 6
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown6"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop6/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop2/totalSell'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+      {/* shop7 */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown7"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+         Shop 7
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown7"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop7/totalSell'}>
 
             <li>
               <a
@@ -238,12 +484,12 @@ function Deshboard() {
             <li>
         <button
           id="doubleDropdownButton"
-          data-dropdown-toggle="doubleDropdown4"
+          data-dropdown-toggle="doubleDropdown8"
           data-dropdown-placement="right-start"
           type="button"
           class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
         >
-          Shop 4
+         Shop 8
           <svg
             class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
             aria-hidden="true"
@@ -261,14 +507,14 @@ function Deshboard() {
           </svg>
         </button>
         <div
-          id="doubleDropdown4"
+          id="doubleDropdown8"
           class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
         >
           <ul
             class="py-2 text-sm text-gray-700 dark:text-gray-200"
             aria-labelledby="doubleDropdownButton"
           >
-             <Link to={'/deshboard/tuchola/totalSell'}>
+             <Link to={'/deshboard/shop8/totalSell'}>
 
             <li>
               <a
@@ -281,6 +527,433 @@ function Deshboard() {
          </Link>
          
             <Link to={'/deshboard/shop1/expense'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+      {/* shop 9 */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown9"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          Shop 9
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown9"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop9/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop1/expense'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+      {/* shop 10 */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown10"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          Shop 10
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown10"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop10/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop1/expense'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+      {/* shop 9 */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown11"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          Shop 11
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown11"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop11/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop1/expense'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+      {/* shop 12 */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown12"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          Shop 12
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown12"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop12/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop1/expense'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+      {/* shop 13 */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown13"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          Shop 13
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown13"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop13/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop1/expense'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+      {/* shop 14 */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown9"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          Shop 14
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown14"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop9/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop14/expense'}>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Total Expense
+              </a>
+            </li>
+           </Link>
+         
+          
+          </ul>
+        </div>
+      </li>
+      {/* shop 9 */}
+            <li>
+        <button
+          id="doubleDropdownButton"
+          data-dropdown-toggle="doubleDropdown15"
+          data-dropdown-placement="right-start"
+          type="button"
+          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          Shop 15
+          <svg
+            class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="doubleDropdown9"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="doubleDropdownButton"
+          >
+             <Link to={'/deshboard/shop15/totalSell'}>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Sells
+              </a>
+            </li>
+         </Link>
+         
+            <Link to={'/deshboard/shop15/expense'}>
             <li>
               <a
                 href="#"

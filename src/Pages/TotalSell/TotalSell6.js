@@ -3,14 +3,14 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../../firebase';
 
 
-function TotalSell() {
-  const [user, loading, error] = useAuthState(auth);
+function TotalSell6() {
+    const [user, loading, error] = useAuthState(auth);
 
     const [sells,setSells] = useState([])
     const [jsonData, setJsonData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [selectedDate, setSelectedDate] = useState("");
-
+  
     useEffect(() => {
       // Fetch data from time.json when the component mounts
       fetchData();
@@ -25,6 +25,7 @@ function TotalSell() {
       // Update filteredData when jsonData or selectedDate changes
       filterData();
     }, [jsonData, selectedDate]);
+  
     const fetchData = async () => {
       try {
         const response = await fetch("http://localhost:5000/totalSell"); // Assumes time.json is in the public folder
@@ -34,7 +35,7 @@ function TotalSell() {
         console.error("Error fetching data:", error);
       }
     };
-    const FilterEmail = jsonData.filter((item) =>item?.email == 'r9ahim@gmail.com');
+    const FilterEmail = jsonData.filter((item) =>item?.email === 'r8ahim@gmail.com');
 
     const filterData = () => {
       const selectedMonth = new Date(selectedDate).getMonth() + 1;
@@ -43,7 +44,7 @@ function TotalSell() {
       const filteredData = FilterEmail.filter((appointment) => {
         const appointmentMonth = new Date(appointment.time).getMonth() + 1;
         const appointmentYear = new Date(appointment.time).getFullYear();
-    
+  
         return (
           appointmentMonth === selectedMonth && appointmentYear === selectedYear
         );
@@ -54,14 +55,11 @@ function TotalSell() {
   
     const handleDateChange = (event) => {
       setSelectedDate(event.target.value);
+      console.log(event.target.value)
     };
-  console.log(filteredData)
-  console.log(selectedDate)
+  
 
-
-
-
-
+  
 
     const sellValues = filteredData.map((item) => parseFloat(item.totalSellValue) || 0);
     const cashValues = filteredData.map((item) => parseFloat(item.totalCashValue) || 0);
@@ -85,7 +83,6 @@ useEffect(()=>{
     .then(data=>setSells(data))
 },[])
 
-console.log(FilterEmail)
 
 
 
@@ -114,14 +111,7 @@ console.log(FilterEmail)
         <th>Glovo</th> 
         <th>Restomatic</th>
         <th>Phisnafel</th> 
-        {/* <th>D.cost</th>  */}
-        {/* <th>Meat</th> 
-        <th>Fudi</th> 
-        <th>Warzywa</th>
-        <th>Cola</th> 
-        <th>Opakowania</th> 
-        <th>gaz</th> 
-        <th>others</th>  */}
+      
       
       </tr>
     </thead> 
@@ -159,4 +149,4 @@ console.log(FilterEmail)
   )
 }
 
-export default TotalSell
+export default TotalSell6
