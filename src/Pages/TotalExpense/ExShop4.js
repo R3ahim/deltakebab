@@ -8,7 +8,7 @@ function ExShop4() {
     const [jsonData, setJsonData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [selectedDate, setSelectedDate] = useState("");
-    const [user] = useAuthStatee(auth)
+    const [user] = useAuthState(auth)
 
     useEffect(() => {
       // Fetch data from time.json when the component mounts
@@ -34,12 +34,12 @@ function ExShop4() {
         console.error("Error fetching data:", error);
       }
     };
-  console.log(jsonData)
+    const FilterEmail = jsonData.filter((item) =>item?.email === 'shop4@gmail.com');
     const filterData = () => {
       const selectedMonth = new Date(selectedDate).getMonth() + 1;
       const selectedYear = new Date(selectedDate).getFullYear();
   
-      const filteredData = jsonData.filter((appointment) => {
+      const filteredData = FilterEmail.filter((appointment) => {
         const appointmentMonth = new Date(appointment.time).getMonth() + 1;
         const appointmentYear = new Date(appointment.time).getFullYear();
   

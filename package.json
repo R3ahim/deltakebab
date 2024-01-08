@@ -1,5 +1,5 @@
 {
-  "name": "first-module",
+  "name": "deltakabab",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -47,5 +47,9 @@
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4"
-  }
+  },
+  "description": "this webserver company website",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC"
 }

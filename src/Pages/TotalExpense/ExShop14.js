@@ -35,12 +35,13 @@ function ExShop14() {
         console.error("Error fetching data:", error);
       }
     };
-  console.log(jsonData)
+    const FilterEmail = jsonData.filter((item) =>item?.email === 'shop14@gmail.com');
+
     const filterData = () => {
       const selectedMonth = new Date(selectedDate).getMonth() + 1;
       const selectedYear = new Date(selectedDate).getFullYear();
   
-      const filteredData = jsonData.filter((appointment) => {
+      const filteredData = FilterEmail.filter((appointment) => {
         const appointmentMonth = new Date(appointment.time).getMonth() + 1;
         const appointmentYear = new Date(appointment.time).getFullYear();
   

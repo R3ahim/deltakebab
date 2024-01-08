@@ -35,7 +35,7 @@ function TotalSell14() {
         console.error("Error fetching data:", error);
       }
     };
-    const FilterEmail = jsonData.filter((item) =>item?.email === 'r8ahim@gmail.com');
+    const FilterEmail = jsonData.filter((item) =>item?.email === 'shop14@gmail.com');
 
     const filterData = () => {
       const selectedMonth = new Date(selectedDate).getMonth() + 1;

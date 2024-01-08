@@ -1,0 +1,29 @@
+[debug] [2024-01-08T10:38:39.091Z] ----------------------------------------------------------------------
+[debug] [2024-01-08T10:38:39.096Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\itabd\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-08T10:38:39.097Z] CLI Version:   13.0.2
+[debug] [2024-01-08T10:38:39.097Z] Platform:      win32
+[debug] [2024-01-08T10:38:39.098Z] Node Version:  v18.14.2
+[debug] [2024-01-08T10:38:39.119Z] Time:          Mon Jan 08 2024 16:38:39 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-01-08T10:38:39.119Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-08T10:38:39.138Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-08T10:38:39.139Z] > authorizing via signed-in user (itabdurrahim22@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\itabd\Music\prj\deltakabab
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
