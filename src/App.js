@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './Pages/Home/Banner';
 import Navbar from './Pages/Shared/Navbar';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, Link } from 'react-router-dom';
 import Montlysheet from './Pages/MontlySheet/Montlysheet';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register';
@@ -45,9 +45,32 @@ import TotalSell12 from './Pages/TotalSell/TotalSell12';
 import TotalSell13 from './Pages/TotalSell/TotalSell13';
 import TotalSell14 from './Pages/TotalSell/TotalSell14';
 import TotalSell15 from './Pages/TotalSell/TotalSell15';
+import Details from './Pages/TotalExpense/Details';
+import ExShop2 from './Pages/TotalExpense/ExShop2';
+import ExShop3 from './Pages/TotalExpense/ExShop3';
+import ExShop4 from './Pages/TotalExpense/ExShop4';
+import ExShop5 from './Pages/TotalExpense/ExShop5';
+import ExShop6 from './Pages/TotalExpense/ExShop6';
+import ExShop7 from './Pages/TotalExpense/ExShop7';
+import ExShop8 from './Pages/TotalExpense/ExShop8';
+import ExShop9 from './Pages/TotalExpense/ExShop9';
+import ExShop10 from './Pages/TotalExpense/ExShop10';
+import ExShop11 from './Pages/TotalExpense/ExShop11';
+import ExShop12 from './Pages/TotalExpense/ExShop12';
+import ExShop13 from './Pages/TotalExpense/ExShop13';
+import ExShop14 from './Pages/TotalExpense/ExShop14';
+import ExShop15 from './Pages/TotalExpense/ExShop15';
+import Compnay from './Pages/Company/Compnay';
+import CompanyLock from './Pages/Lock/CompanyLock';
+import CompnayShow from './Pages/Company/CompnayShow';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from './firebase';
 
 
 function App() {
+const [user] = useAuthState(auth)
+const email = 'r8aim@gmail.com'
+console.log(user?.email)
   const [authenticated, setAuthenticated] = useState(false);
   const [authenticatedShop2, setAuthenticatedShop2] = useState(false);
   const [authenticatedShop3, setAuthenticatedShop3] = useState(false);
@@ -63,22 +86,25 @@ function App() {
   const [authenticatedShop13, setAuthenticatedShop13] = useState(false);
   const [authenticatedShop14, setAuthenticatedShop14] = useState(false);
   const [authenticatedShop15, setAuthenticatedShop15] = useState(false);
+  const [authenticatedCompany, setCompnayAuthenticated] = useState(false);
+  const [authenDesboard, setAutenDesboard] = useState(false);
 
   return (
     <div className="App ">
       <Navbar/>
-    
+
      <Routes>
      <Route path='/home' element={<Home></Home>}></Route>
     <Route path='/' element={<Home></Home>}></Route>
-    <Route path='/sheet' element={<Montlysheet/>}></Route>
+    
     <Route path='/login' element={<Login/>}/>
     <Route path='/register' element={<Register/>}/>
     <Route path='/totalSell' element={<TotalSell/>}/>
     {/* <Route path='/addSell' element={<MontyShet/>}/> */}
-    
+    {/* <Route path='/sheet' element={<Montlysheet/>}></Route> */}
+    {/* {user?.eamil === 'r8ahim@gmail.com' ? <Route} */}
 
-
+    {user?.email ==='r8ahim@gmail.com'?<Route path='/sheet' element={<MontyShet/>}/>: <Route path='/sheet' element={<Navigate to='/login'/>}/>}
     {/* <Route path="/" element={<Navigate to="/shoplock2" />} /> */}
                 {/* <Route
           path="/deshboard"
@@ -87,6 +113,12 @@ function App() {
         {/* shop log 2 */}
 
     {/* <Route path="/" element={<Navigate to="/shoplock2" />} /> */}
+         <Route path="/" element={<Navigate to="/companyLock" />} />
+        <Route path="/companyLock" element={<CompanyLock  setCompnayAuthenticated={setCompnayAuthenticated} />} />
+        <Route
+          path="/company"
+          element={authenticatedCompany ? <Compnay /> : <Navigate to="/companyLock" />}
+        />
          <Route path="/shop1" element={<Navigate to="/shopLock1" />} />
         <Route path="/shopLock1" element={<Logger  setAuthenticated={setAuthenticated} />} />
         <Route
@@ -210,36 +242,56 @@ function App() {
         
 
   </Route>
-
-  <Route  path='/deshboard' element={<Deshboard></Deshboard>}>
-   <Route  index element={<MontyShet/>}></Route>
+   <Route  path='/deshboard' element={<Deshboard/>}>
+       <Route  index element={<CompnayShow/>}></Route>
           {/* <Route path="/deshboard/addSell" element={<MontyShet/>}></Route> */}
-          <Route path="/deshboard/shop1/totalSell" element={<TotalSell/>}></Route>
-          <Route path="/deshboard/shop2/totalSell" element={<TotalSell2/>}></Route>
-          <Route path="/deshboard/shop3/totalSell" element={<TotalSell3/>}></Route>
-          <Route path="/deshboard/shop4/totalSell" element={<TotalSell4/>}></Route>
-          <Route path="/deshboard/shop5/totalSell" element={<TotalSell5/>}></Route>
-          <Route path="/deshboard/shop6/totalSell" element={<TotalSell6/>}></Route>
-          <Route path="/deshboard/shop7/totalSell" element={<TotalSell7/>}></Route>
-          <Route path="/deshboard/shop8/totalSell" element={<TotalSell8/>}></Route>
-          <Route path="/deshboard/shop9/totalSell" element={<TotalSell9/>}></Route>
-          <Route path="/deshboard/shop10/totalSell" element={<TotalSell10/>}></Route>
-          <Route path="/deshboard/shop11/totalSell" element={<TotalSell11/>}></Route>
-          <Route path="/deshboard/shop12/totalSell" element={<TotalSell12/>}></Route>
-          <Route path="/deshboard/shop13/totalSell" element={<TotalSell13/>}></Route>
-          <Route path="/deshboard/shop14/totalSell" element={<TotalSell14/>}></Route>
-          <Route path="/deshboard/shop15/totalSell" element={<TotalSell15/>}></Route>
+        
+          {/* Expense Rate */}
+
+     <Route path="/deshboard/shop1/expense" element={<ExShop1/>}></Route>
+     <Route path="/deshboard/shop2/expense" element={<ExShop2/>}></Route>
+     <Route path="/deshboard/shop3/expense" element={<ExShop3/>}></Route>
+     <Route path="/deshboard/shop4/expense" element={<ExShop4/>}></Route>
+     <Route path="/deshboard/shop5/expense" element={<ExShop5/>}></Route>
+     <Route path="/deshboard/shop6/expense" element={<ExShop6/>}></Route>
+     <Route path="/deshboard/shop7/expense" element={<ExShop7/>}></Route>
+     <Route path="/deshboard/shop8/expense" element={<ExShop8/>}></Route>
+     <Route path="/deshboard/shop9/expense" element={<ExShop9/>}></Route>
+     <Route path="/deshboard/shop10/expense" element={<ExShop10/>}></Route>
+     <Route path="/deshboard/shop11/expense" element={<ExShop11/>}></Route>
+     <Route path="/deshboard/shop12/expense" element={<ExShop12/>}></Route>
+     <Route path="/deshboard/shop12/expense" element={<ExShop12/>}></Route>
+     <Route path="/deshboard/shop13/expense" element={<ExShop13/>}></Route>
+     <Route path="/deshboard/shop14/expense" element={<ExShop14/>}></Route>
+     <Route path="/deshboard/shop15/expense" element={<ExShop15/>}></Route>
+    {/* totalSell */}
+    <Route path="/deshboard/shop1/totalSell" element={<TotalSell/>}></Route>
+     <Route path="/deshboard/shop2/totalSell" element={<TotalSell2/>}></Route>
+     <Route path="/deshboard/shop3/totalSell" element={<TotalSell3/>}></Route>
+     <Route path="/deshboard/shop4/totalSell" element={<TotalSell4/>}></Route>
+     <Route path="/deshboard/shop5/totalSell" element={<TotalSell5/>}></Route>
+     <Route path="/deshboard/shop6/totalSell" element={<TotalSell6/>}></Route>
+     <Route path="/deshboard/shop7/totalSell" element={<TotalSell7/>}></Route>
+     <Route path="/deshboard/shop8/totalSell" element={<TotalSell8/>}></Route>
+     <Route path="/deshboard/shop9/totalSell" element={<TotalSell9/>}></Route>
+     <Route path="/deshboard/shop10/totalSell" element={<TotalSell10/>}></Route>
+     <Route path="/deshboard/shop11/totalSell" element={<TotalSell11/>}></Route>
+     <Route path="/deshboard/shop12/totalSell" element={<TotalSell12/>}></Route>
+     <Route path="/deshboard/shop13/totalSell" element={<TotalSell13/>}></Route>
+     <Route path="/deshboard/shop14/totalSell" element={<TotalSell14/>}></Route>
+     <Route path="/deshboard/shop15/totalSell" element={<TotalSell15/>}></Route>
 
 
 
 
 
-          <Route path="/deshboard/MyOrders" element={<Meet/>}></Route>
-          <Route path="/deshboard/shop1/expense" element={<ExShop1/>}></Route>
+          <Route path="/deshboard/shop1/:id" element={<Details/>}></Route>
+
+
+          <Route path="/deshboard/compnayExpance" element={<CompnayShow/>}></Route>
           
-       <Route path='/deshboard/register' element={<Register/>}/>
 
-  </Route> 
+  </Route>
 
 
      </Routes>

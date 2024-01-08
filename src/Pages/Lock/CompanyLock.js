@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const DeshBoardLock = ({ setAutenDesboard }) => {
+const CompanyLock = ({ setCompnayAuthenticated }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState();
   const navigate = useNavigate();
 
   const handleLogin = () => {
     // Check if the provided credentials are correct (replace with your logic)
-    if (username === 'admin' && password === 'admin') {
+    if (username === 'shop' && password === 'shop') {
       // Set authenticated to true and navigate to TotalValue
-      setAutenDesboard(true);
-      navigate('/deshboard');
+      setCompnayAuthenticated(true);
+      navigate('/company');
     } else {
       // Handle incorrect credentials (you may show an error message)
       alert('Invalid credentials');
@@ -40,4 +40,4 @@ const DeshBoardLock = ({ setAutenDesboard }) => {
   );
 };
 
-export default DeshBoardLock;
+export default CompanyLock;

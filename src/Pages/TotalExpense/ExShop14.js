@@ -1,14 +1,15 @@
 import React, { useState,useEffect} from 'react'
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
-function ExShop1() {
+function ExShop14() {
     const [expances,setexpances] = useState([])
     const [jsonData, setJsonData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [selectedDate, setSelectedDate] = useState("");
     const [user] = useAuthState(auth)
+
 
     useEffect(() => {
       // Fetch data from time.json when the component mounts
@@ -166,4 +167,4 @@ function ExShop1() {
   )
 }
 
-export default ExShop1
+export default ExShop14

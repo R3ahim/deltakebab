@@ -53,6 +53,8 @@ function Deshboard() {
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                   </svg>
             </button>
+            
+            
             <ul id="dropdown-example" class="hidden py-2 space-y-2">
                {/* shop tucho dropdown start here */}
             <li>
@@ -161,7 +163,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop2/totalSell'}>
+            <Link to={'/deshboard/shop2/expense'}>
             <li>
               <a
                 href="#"
@@ -344,7 +346,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop2/totalSell'}>
+            <Link to={'/deshboard/shop5/expense'}>
             <li>
               <a
                 href="#"
@@ -405,7 +407,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop2/totalSell'}>
+            <Link to={'/deshboard/shop6/expense'}>
             <li>
               <a
                 href="#"
@@ -466,7 +468,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop1/expense'}>
+            <Link to={'/deshboard/shop7/expense'}>
             <li>
               <a
                 href="#"
@@ -526,7 +528,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop1/expense'}>
+            <Link to={'/deshboard/shop8/expense'}>
             <li>
               <a
                 href="#"
@@ -587,7 +589,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop1/expense'}>
+            <Link to={'/deshboard/shop9/expense'}>
             <li>
               <a
                 href="#"
@@ -648,7 +650,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop1/expense'}>
+            <Link to={'/deshboard/shop10/expense'}>
             <li>
               <a
                 href="#"
@@ -709,7 +711,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop1/expense'}>
+            <Link to={'/deshboard/shop11/expense'}>
             <li>
               <a
                 href="#"
@@ -770,7 +772,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop1/expense'}>
+            <Link to={'/deshboard/shop12/expense'}>
             <li>
               <a
                 href="#"
@@ -831,7 +833,7 @@ function Deshboard() {
             </li>
          </Link>
          
-            <Link to={'/deshboard/shop1/expense'}>
+            <Link to={'/deshboard/shop12/expense'}>
             <li>
               <a
                 href="#"
@@ -880,7 +882,7 @@ function Deshboard() {
             class="py-2 text-sm text-gray-700 dark:text-gray-200"
             aria-labelledby="doubleDropdownButton"
           >
-             <Link to={'/deshboard/shop9/totalSell'}>
+             <Link to={'/deshboard/shop14/totalSell'}>
 
             <li>
               <a

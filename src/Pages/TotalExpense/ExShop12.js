@@ -3,13 +3,13 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase';
 
-function ExShop1() {
+function ExShop12() {
     const [expances,setexpances] = useState([])
     const [jsonData, setJsonData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [selectedDate, setSelectedDate] = useState("");
     const [user] = useAuthState(auth)
-
+  
     useEffect(() => {
       // Fetch data from time.json when the component mounts
       fetchData();
@@ -166,4 +166,4 @@ function ExShop1() {
   )
 }
 
-export default ExShop1
+export default ExShop12

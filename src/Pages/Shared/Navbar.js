@@ -6,6 +6,7 @@ import { auth } from '../../firebase';
 
 const Navbar = () => {
   const [user, loading, error] = useAuthState(auth);
+  console.log(user)
 
   const logout = () => {
     signOut(auth);
@@ -102,14 +103,30 @@ const Navbar = () => {
             </div>
         </li>
         <li>
-          {user?.email === 'shop1@gmail.com'?<Link to="/deshboard" >Dashboard</Link>:<a></a>}
+          {user?.email === 'admin@gmail.com'?<Link to="/deshboard" >Dashboard</Link>:<a></a>}
         </li>
         <li>
           <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Company</a>
         </li>
         <li>
           <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-          <li>{user ? <button className="btn btn-ghost" onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
+          <div> {user ?   <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn ">
+        <div class="w-10 rounded-full">
+      <button className='btn'>{user.displayName}</button>
+        </div>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li>
+          <a class="justify-between">
+            Profile
+            <span class="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><button onClick={logout}>Logout</button></li>
+      </ul>
+    </div>: <Link to="/login">Login</Link>}</div>
 
           </a>
         </li>

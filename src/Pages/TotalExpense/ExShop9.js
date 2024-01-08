@@ -1,9 +1,9 @@
 import React, { useState,useEffect} from 'react'
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
-function ExShop1() {
+function ExShop9() {
     const [expances,setexpances] = useState([])
     const [jsonData, setJsonData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
@@ -166,4 +166,4 @@ function ExShop1() {
   )
 }
 
-export default ExShop1
+export default ExShop9

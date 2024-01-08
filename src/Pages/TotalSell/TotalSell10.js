@@ -28,7 +28,7 @@ function TotalSell10() {
   
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/totalSell"); // Assumes time.json is in the public folder
+        const response = await fetch("https://deltaserverer.onrender.com/totalSell"); // Assumes time.json is in the public folder
         const data = await response.json();
         setJsonData(data);
       } catch (error) {
@@ -46,7 +46,7 @@ function TotalSell10() {
         const appointmentYear = new Date(appointment.time).getFullYear();
   
         return (
-          appointmentMonth === selectedMonth && appointmentYear === selectedYear
+          appointmentMonth === selectedMonth && appointmentYear === selectedYear && user?.email === 'admin@gmail.com'
         );
       });
   
@@ -78,7 +78,7 @@ function TotalSell10() {
      
 
 useEffect(()=>{
-    fetch(`http://localhost:5000/totalSell`)
+    fetch(`https://deltaserverer.onrender.com/totalSell`)
     .then(res =>res.json())
     .then(data=>setSells(data))
 },[])

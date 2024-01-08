@@ -1,9 +1,9 @@
 import React, { useState,useEffect} from 'react'
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
-function ExShop1() {
+function ExShop10() {
     const [expances,setexpances] = useState([])
     const [jsonData, setJsonData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
@@ -75,7 +75,7 @@ function ExShop1() {
      const totolGlovo = glovoValues.reduce((sum, value) =>  sum + value, 0);
      const totalRestomatic = restomaticValues.reduce((sum, value) =>  sum + value, 0);
      const totalPhisnafel = phisnafelValues.reduce((sum, value) =>  sum + value, 0);
-    //  const totalOpakonia = opakowaniaValue.reduce((sum, value) =>  sum + value, 0);
+     const totalOpakonia = opakowaniaValue.reduce((sum, value) =>  sum + value, 0);
      const totalOthers = othersValue.reduce((sum, value) =>  sum + value, 0);
      const totaldCost = dCostValue.reduce((sum, value) =>  sum + value, 0);
      
@@ -166,4 +166,4 @@ function ExShop1() {
   )
 }
 
-export default ExShop1
+export default ExShop10
